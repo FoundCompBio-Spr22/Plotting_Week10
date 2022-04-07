@@ -22,3 +22,25 @@ When a module (or submodule) is imported with the `as` keyword, it gives us a di
 Another module that's commonly used when analyzing and plotting data is `numpy`
 
 `import numpy as np`
+
+## Our First Plot
+
+To generate some coordinates for plotting, we'll start by using a `numpy` function that creates a series of numbers on a regular interval
+
+`x = np.linspace(1,10,0.25)`
+
+Now, we'll create `y` values by first setting them equal to the `x` values (using a deep copy)
+
+`y = copy.copy(x)`
+
+and then adding some random noise
+
+```
+for i in range(len(y)):
+    y[i] = y[i] + np.random.normal(0,0.5,1)
+```
+
+To create a simple line plot, we can use the `.plot()` function of `pyplot`
+
+`plt.plot(x,y)`
+
