@@ -44,3 +44,4 @@ To create a simple line plot, we can use the `.plot()` function of `pyplot`
 
 `plt.plot(x,y)`
 
+![plot1](https://raw.githubusercontent.com/FoundCompBio-Spr22/Plotting_Week10/main/images/plot1.png)
