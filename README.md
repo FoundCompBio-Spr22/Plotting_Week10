@@ -27,7 +27,7 @@ Another module that's commonly used when analyzing and plotting data is `numpy`
 
 To generate some coordinates for plotting, we'll start by using a `numpy` function that creates a series of numbers on a regular interval
 
-`x = np.linspace(1,10,0.25)`
+`x = np.linspace(1,100,100)`
 
 Now, we'll create `y` values by first setting them equal to the `x` values (using a deep copy)
 
@@ -37,7 +37,7 @@ and then adding some random noise
 
 ```
 for i in range(len(y)):
-    y[i] = y[i] + np.random.normal(0,0.5,1)
+    y[i] = y[i] + np.random.normal(0,5,1)
 ```
 
 To create a simple line plot, we can use the `.plot()` function of `pyplot`
